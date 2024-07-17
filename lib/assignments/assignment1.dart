@@ -23,7 +23,8 @@ class Assignment1 extends HookWidget {
 
     final size = MediaQuery.of(context).size;
     return MyScaffold(
-      title: 'Assignment1',
+      color: Colors.black,
+      title: 'Assignment 1',
       body: Center(
         child: Container(
           color: isFlip.value ? Colors.white : Colors.black,

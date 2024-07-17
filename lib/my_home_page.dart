@@ -5,8 +5,11 @@ import 'package:go_router/go_router.dart';
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
-  void _onPressed(BuildContext context) {
-    context.pushNamed(RouterName.assignment1);
+  void _onPressed(
+    BuildContext context,
+    String named,
+  ) {
+    context.pushNamed(named);
   }
 
   @override
@@ -20,8 +23,12 @@ class MyHomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () => _onPressed(context),
+              onPressed: () => _onPressed(context, RouterName.assignment1),
               child: const Text("assignment 1"),
+            ),
+            ElevatedButton(
+              onPressed: () => _onPressed(context, RouterName.assignment2),
+              child: const Text("assignment 2"),
             ),
           ],
         ),
