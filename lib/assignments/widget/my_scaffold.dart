@@ -6,16 +6,19 @@ class MyScaffold extends StatelessWidget {
     required this.color,
     required this.title,
     this.body,
+    this.actions,
   });
   final Color color;
   final String title;
   final Widget? body;
+  final List<Widget>? actions;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: color,
         title: Text(title),
+        actions: actions,
       ),
       backgroundColor: color,
       body: body,
