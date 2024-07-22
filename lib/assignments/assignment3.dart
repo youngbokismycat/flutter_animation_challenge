@@ -68,7 +68,6 @@ class _Assignment3State extends State<Assignment3>
       Tween<double>(begin: 1.0, end: 0.0).animate(
     _curvedProgressAnimation,
   );
-
   void _animateTick({
     required progressPrev,
     required progress,
@@ -84,7 +83,6 @@ class _Assignment3State extends State<Assignment3>
     });
     _progressController.forward();
   }
-
   double get _progress {
     if (_runningState == RunningState.run) {
       return _onDisplayDuration / _defaultDuration;
@@ -97,9 +95,7 @@ class _Assignment3State extends State<Assignment3>
   final int _defaultDuration = 1500;
   final int _defaultRestDuration = 300;
   late int _onDisplayDuration;
-
   Timer? _timer;
-
   void _startTimer() {
     setState(() {});
     _timerState = TimerState.onRun;
@@ -109,7 +105,6 @@ class _Assignment3State extends State<Assignment3>
     );
     _colorController.forward();
   }
-
   void _onTick(Timer timer) {
     final progressPrev = _progress;
     setState(() {
@@ -139,7 +134,6 @@ class _Assignment3State extends State<Assignment3>
       }
     });
   }
-
   void _stopTimer() {
     setState(() {});
     _timerState = TimerState.onPause;

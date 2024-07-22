@@ -7,4 +7,6 @@ class RouterName {
   static const String assignment2Url = '/assignment2';
   static const String assignment3 = "assignment3";
   static const String assignment3Url = '/assignment3';
+  static const String assignment4 = "assignment4";
+  static const String assignment4Url = '/assignment4';
 }
