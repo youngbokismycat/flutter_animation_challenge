@@ -2,6 +2,7 @@ import 'package:flutter_animation_assignment/assignments/assignment1.dart';
 import 'package:flutter_animation_assignment/assignments/assignment2.dart';
 import 'package:flutter_animation_assignment/assignments/assignment3.dart';
 import 'package:flutter_animation_assignment/assignments/assignment4.dart';
+import 'package:flutter_animation_assignment/assignments/assignment5/assignment5.dart';
 import 'package:flutter_animation_assignment/core/router_name.dart';
 import 'package:flutter_animation_assignment/my_home_page.dart';
 import 'package:go_router/go_router.dart';
@@ -33,6 +34,11 @@ final router = GoRouter(
       name: RouterName.assignment4,
       path: RouterName.assignment4Url,
       builder: (context, state) => const Assignment4(),
+    ),
+    GoRoute(
+      name: RouterName.assignment5,
+      path: RouterName.assignment5Url,
+      builder: (context, state) => const Assignment5(),
     ),
   ],
 );

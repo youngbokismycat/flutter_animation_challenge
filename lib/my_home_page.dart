@@ -38,6 +38,10 @@ class MyHomePage extends StatelessWidget {
               onPressed: () => _onPressed(context, RouterName.assignment4),
               child: const Text("assignment 4"),
             ),
+            ElevatedButton(
+              onPressed: () => _onPressed(context, RouterName.assignment5),
+              child: const Text("assignment 5"),
+            ),
           ],
         ),
       ),
