@@ -33,11 +33,11 @@ class BackgroundBlur extends StatelessWidget {
           ),
           child: BackdropFilter(
             filter: ImageFilter.blur(
-              sigmaX: 5,
-              sigmaY: 5,
+              sigmaX: 2,
+              sigmaY: 2,
             ),
             child: Container(
-              color: Colors.black.withOpacity(0.5),
+              color: Colors.black.withOpacity(0.25),
             ),
           ),
         ),
@@ -48,7 +48,7 @@ class BackgroundBlur extends StatelessWidget {
           )
           .slideY(
             begin: 0,
-            end: 0.1,
+            end: 0.03,
             duration: 0.8.seconds,
             curve: _isPlayPauseTap ? Curves.easeInOutQuart : Curves.easeInExpo,
           ),

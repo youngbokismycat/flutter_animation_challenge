@@ -41,8 +41,11 @@ class LPPanel extends StatelessWidget {
               ),
             ),
             Container(
-              width: 380,
-              height: 380,
+              key: ValueKey(
+                _currentPage,
+              ),
+              width: 385,
+              height: 385,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
@@ -58,7 +61,7 @@ class LPPanel extends StatelessWidget {
                   delay: 1.seconds,
                 )
                 .rotate(
-                  duration: 30.seconds,
+                  duration: 80.seconds,
                 ),
           ],
         )
@@ -71,7 +74,8 @@ class LPPanel extends StatelessWidget {
               end: 0,
               duration: _isPlayPauseTap ? 2.seconds : 500.milliseconds,
               curve: Curves.easeOutCirc,
-            ),
+            )
+            .animate(),
       ),
     );
   }

@@ -44,6 +44,8 @@ dependencies:
   flutter_flip_card: ^0.0.6
   flutter_animate: ^4.5.0
   font_awesome_flutter: ^10.7.0
+  siri_wave: ^2.0.0+1
+  flutter_lyric: ^2.0.4+6
 
 dev_dependencies:
   flutter_test:

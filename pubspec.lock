@@ -302,6 +302,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.2"
+  flutter_lyric:
+    dependency: "direct main"
+    description:
+      name: flutter_lyric
+      sha256: "5d7e6c46c07b96842a05d5d8af385cb9d715feb7e0f1db1983bc128813c420d7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.4+6"
   flutter_riverpod:
     dependency: transitive
     description:
@@ -616,6 +624,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
+  siri_wave:
+    dependency: "direct main"
+    description:
+      name: siri_wave
+      sha256: "3bbd2bb95727a234f059b7947d79654d6e00e3fe1f66040dab99b74aec9279a8"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0+1"
   sky_engine:
     dependency: transitive
     description: flutter
